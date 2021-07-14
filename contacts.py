@@ -27,7 +27,7 @@ except:
     db = sqlite3.connect(new_dir + "\\" + 'contacts.sqlite')
 
 
-# db = sqlite3.connect(os.getcwd() + 'contacts.sqlite')
+# CREATE A TABLE IN DATABASE
 cur = db.cursor()
 db.execute("CREATE TABLE IF NOT EXISTS contacts (name TEXT, phone INTEGER, email TEXT)")
 
